@@ -1,12 +1,13 @@
 import React from 'react';
 
 import Expenses from './components/Expenses/Expenses';
+import NewExpense from './components/NewExpense/NewExpense';
 
 const App = () => {
   const expenses = [
     {
       id: 'e1',
-      title: 'tissue Paper',
+      title: 'Tissue Paper',
       amount: 94.12,
       date: new Date(2020, 7, 14),
     },
@@ -34,8 +35,9 @@ const App = () => {
 
   return (
     <div>
-      <h2>Let's get started!</h2>
+      <NewExpense/>
       <Expenses items={expenses} />
+      
     </div>
   );
 }
